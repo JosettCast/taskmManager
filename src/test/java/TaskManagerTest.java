@@ -28,7 +28,7 @@ public class TaskManagerTest {
         manager.addTask("Wash dishes");
         manager.markAsDone("Wash dishes");
 
-        List<Task> pending = manager.getPendingTasks();
+        List<TaskManager.Task> pending = manager.getPendingTasks();
         assertEquals(1, pending.size());
         assertEquals("Study TDD", pending.get(0).getDescription());
     }
